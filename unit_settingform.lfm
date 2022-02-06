@@ -1,0 +1,119 @@
+object Form_Setting: TForm_Setting
+  Left = 1165
+  Height = 339
+  Top = 631
+  Width = 451
+  BorderStyle = bsSingle
+  Caption = '按键设置'
+  ClientHeight = 339
+  ClientWidth = 451
+  DesignTimePPI = 120
+  OnHide = FormHide
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.8.4.0'
+  object Edit_Caption: TEdit
+    Left = 16
+    Height = 28
+    Top = 40
+    Width = 416
+    OnChange = Edit_CaptionChange
+    TabOrder = 0
+  end
+  object Button_Open: TButton
+    Left = 384
+    Height = 28
+    Top = 112
+    Width = 48
+    Caption = '浏览'
+    OnClick = Button_OpenClick
+    TabOrder = 1
+  end
+  object Edit_Address: TEdit
+    Left = 16
+    Height = 28
+    Top = 112
+    Width = 360
+    OnChange = Edit_AddressChange
+    TabOrder = 2
+  end
+  object Edit_Parameter: TEdit
+    Left = 16
+    Height = 28
+    Top = 184
+    Width = 416
+    OnChange = Edit_ParameterChange
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 105
+    Caption = '按键显示文字：'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 88
+    Width = 105
+    Caption = '应用程序路径：'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 160
+    Width = 105
+    Caption = '额外参数设置：'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 15
+    Top = 232
+    Width = 105
+    Caption = '调用命令预览：'
+    ParentColor = False
+  end
+  object Edit_PreView: TEdit
+    Left = 16
+    Height = 28
+    Top = 256
+    Width = 416
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object Button_Okay: TButton
+    Left = 64
+    Height = 28
+    Top = 296
+    Width = 96
+    Caption = '完成设置'
+    OnClick = Button_OkayClick
+    TabOrder = 5
+  end
+  object Button_Cancel: TButton
+    Left = 288
+    Height = 28
+    Top = 296
+    Width = 96
+    Caption = '取消设置'
+    OnClick = Button_CancelClick
+    TabOrder = 6
+  end
+  object Button_Reset: TButton
+    Left = 176
+    Height = 28
+    Top = 296
+    Width = 96
+    Caption = '重置设置'
+    OnClick = Button_ResetClick
+    TabOrder = 7
+  end
+  object OpenDialog: TOpenDialog
+    left = 320
+    top = 161
+  end
+end
